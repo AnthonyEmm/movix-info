@@ -132,7 +132,7 @@ function App() {
               />
             ))
           ) : (
-            <Placeholder src={"movix"} />
+            <Placeholder src={movix} />
           )}
         </MovieListContainer>
       </div>
