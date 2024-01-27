@@ -99,7 +99,7 @@ function App() {
       <Container>
         <Header>
           <AppName>
-            <Movieimage src={movix} alt="app background image" />
+            <Movieimage src={movix} alt="background image" />
             MovixInfo
           </AppName>
           <SearchInput
@@ -132,7 +132,7 @@ function App() {
               />
             ))
           ) : (
-            <Placeholder src={"movix.png"} />
+            <Placeholder src={"movix"} />
           )}
         </MovieListContainer>
       </div>
