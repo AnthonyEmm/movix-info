@@ -4,7 +4,7 @@ import MovieComponents from "./components/MovieComponents";
 import MovieInfoComponent from "./components/MovieInfoComponent";
 import axios from "axios";
 
-export const API_KEY = "ff20a5a0";
+export const API_KEY = import.meta.env.VITE_API_KEY;
 
 const Container = styled.div`
 display: flex;
