@@ -98,7 +98,7 @@ function App() {
       <Container>
         <Header>
           <AppName>
-            <Movieimage src="/Movix.png" />
+            <Movieimage src="/movix.png" />
             MovixInfo
           </AppName>
           <SearchInput
