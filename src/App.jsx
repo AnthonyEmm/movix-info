@@ -3,6 +3,7 @@ import { useState } from "react";
 import MovieComponents from "./components/MovieComponents";
 import MovieInfoComponent from "./components/MovieInfoComponent";
 import axios from "axios";
+import movix from "./assets/movix.png";
 
 export const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -98,7 +99,7 @@ function App() {
       <Container>
         <Header>
           <AppName>
-            <Movieimage src="/movix.png" />
+            <Movieimage src={movix} alt="app background image" />
             MovixInfo
           </AppName>
           <SearchInput
