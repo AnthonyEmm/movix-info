@@ -119,10 +119,10 @@ border-bottom: 1px solid whitesmoke;
   & span {
     opacity: 0.8;
   }
-`,h1=e=>{const[t,n]=Qe.useState(),{selectedMovie:r}=e;return Qe.useEffect(()=>{cp.get(`https://www.omdbapi.com/?i=${r}&apikey=${fp}`).then(o=>n(o.data))},[r]),T.jsx(a1,{children:t?T.jsxs(T.Fragment,{children:[T.jsx(c1,{src:t==null?void 0:t.Poster}),T.jsxs(f1,{children:[T.jsxs(d1,{children:[t==null?void 0:t.Type,": ",t==null?void 0:t.Title]}),T.jsxs(Ze,{children:["Language : ",T.jsx("span",{children:t==null?void 0:t.Language})]}),T.jsxs(Ze,{children:["IMDB Rating : ",T.jsx("span",{children:t==null?void 0:t.imdbRating})]}),T.jsxs(Ze,{children:["Rated : ",T.jsx("span",{children:t==null?void 0:t.Rated})]}),T.jsxs(Ze,{children:["Release Date : ",T.jsx("span",{children:t==null?void 0:t.Released})]}),T.jsxs(Ze,{children:["Duration : ",T.jsx("span",{children:t==null?void 0:t.Runtime})]}),T.jsxs(Ze,{children:["Genre : ",T.jsx("span",{children:t==null?void 0:t.Genre})]}),T.jsxs(Ze,{children:["Director : ",T.jsx("span",{children:t==null?void 0:t.Director})]}),T.jsxs(Ze,{children:["Actors : ",T.jsx("span",{children:t==null?void 0:t.Actors})]}),T.jsxs(Ze,{children:["Country : ",T.jsx("span",{children:t==null?void 0:t.Country})]}),T.jsxs(Ze,{children:["Plot : ",T.jsx("span",{children:t==null?void 0:t.Plot})]})]}),T.jsx(p1,{title:"Close",onClick:()=>e.onMovieSelect(),children:"X"})]}):T.jsx("div",{className:"loader"})})},fp="ff20a5a0",m1=re.div`
+`,h1=e=>{const[t,n]=Qe.useState(),{selectedMovie:r}=e;return Qe.useEffect(()=>{cp.get(`https://www.omdbapi.com/?i=${r}&apikey=${fp}`).then(o=>n(o.data))},[r]),T.jsx(a1,{children:t?T.jsxs(T.Fragment,{children:[T.jsx(c1,{src:t==null?void 0:t.Poster}),T.jsxs(f1,{children:[T.jsxs(d1,{children:[t==null?void 0:t.Type,": ",t==null?void 0:t.Title]}),T.jsxs(Ze,{children:["Language : ",T.jsx("span",{children:t==null?void 0:t.Language})]}),T.jsxs(Ze,{children:["IMDB Rating : ",T.jsx("span",{children:t==null?void 0:t.imdbRating})]}),T.jsxs(Ze,{children:["Rated : ",T.jsx("span",{children:t==null?void 0:t.Rated})]}),T.jsxs(Ze,{children:["Release Date : ",T.jsx("span",{children:t==null?void 0:t.Released})]}),T.jsxs(Ze,{children:["Duration : ",T.jsx("span",{children:t==null?void 0:t.Runtime})]}),T.jsxs(Ze,{children:["Genre : ",T.jsx("span",{children:t==null?void 0:t.Genre})]}),T.jsxs(Ze,{children:["Director : ",T.jsx("span",{children:t==null?void 0:t.Director})]}),T.jsxs(Ze,{children:["Actors : ",T.jsx("span",{children:t==null?void 0:t.Actors})]}),T.jsxs(Ze,{children:["Country : ",T.jsx("span",{children:t==null?void 0:t.Country})]}),T.jsxs(Ze,{children:["Plot : ",T.jsx("span",{children:t==null?void 0:t.Plot})]})]}),T.jsx(p1,{title:"Close",onClick:()=>e.onMovieSelect(),children:"X"})]}):T.jsx("div",{className:"loader"})})},m1="/movix-info/assets/movix-32d33239.png",fp="ff20a5a0",y1=re.div`
 display: flex;
 flex direction: column;
-`,y1=re.div`
+`,g1=re.div`
 display: flex;
 flex direction: row;
 justify-content: space-between;
@@ -135,16 +135,16 @@ font-weight: bold;
 box-shadow: 0 3px 6px 0 #555;
 width: 100%;
 border-radius: 10px;
-`,g1=re.div`
+`,v1=re.div`
 display: flex;
 flex direction: row;
 align-items: center;
-`,v1=re.img`
+`,w1=re.img`
   width: 48px;
   height: 48px;
   margin: 15px;
   border-radius: 5px;
-`,w1=re.input`
+`,S1=re.input`
   color: black;
   font-size: 16px;
   font-weight: bold;
@@ -156,18 +156,18 @@ align-items: center;
   border-radius: 10px;
   background-color: #fff;
   padding: 10px;
-`,S1=re.div`
+`,k1=re.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 30px;
   justify-content: space-evenly;
   gap: 24px;
-`,k1=re.img`
+`,x1=re.img`
   width: 250px;
   height: 250px;
   margin: 150px;
   border-radius: 10%;
   display: flex;
   text-align: center;
-`;function x1(){const[e,t]=Qe.useState(),[n,r]=Qe.useState(),[o,i]=Qe.useState([]),[l,s]=Qe.useState(),u=async c=>{const h=await cp.get(`https://www.omdbapi.com/?s=${c}&apikey=${fp}`);i(h.data.Search)},a=c=>{clearTimeout(n),t(c.target.value);const h=setTimeout(()=>u(c.target.value),500);r(h)};return T.jsxs(T.Fragment,{children:[T.jsx(m1,{children:T.jsxs(y1,{children:[T.jsxs(g1,{children:[T.jsx(v1,{src:"/movix.png"}),"MovixInfo"]}),T.jsx(w1,{placeholder:"Search here...",value:e,onChange:a})]})}),T.jsxs("h1",{children:["Welcome. ",T.jsx("br",{}),"Search information about movies and TV shows ",T.jsx("br",{}),"Happy Searching!"]}),T.jsxs("div",{children:[l&&T.jsx(h1,{selectedMovie:l,onMovieSelect:s}),T.jsx(S1,{children:o!=null&&o.length?o.map((c,h)=>T.jsx(Q0,{movie:c,onMovieSelect:s},h)):T.jsx(k1,{src:"Movix.png"})})]})]})}vl.createRoot(document.getElementById("root")).render(T.jsx(Ln.StrictMode,{children:T.jsx(x1,{})}));
+`;function E1(){const[e,t]=Qe.useState(),[n,r]=Qe.useState(),[o,i]=Qe.useState([]),[l,s]=Qe.useState(),u=async c=>{const h=await cp.get(`https://www.omdbapi.com/?s=${c}&apikey=${fp}`);i(h.data.Search)},a=c=>{clearTimeout(n),t(c.target.value);const h=setTimeout(()=>u(c.target.value),500);r(h)};return T.jsxs(T.Fragment,{children:[T.jsx(y1,{children:T.jsxs(g1,{children:[T.jsxs(v1,{children:[T.jsx(w1,{src:m1,alt:"app background image"}),"MovixInfo"]}),T.jsx(S1,{placeholder:"Search here...",value:e,onChange:a})]})}),T.jsxs("h1",{children:["Welcome. ",T.jsx("br",{}),"Search information about movies and TV shows ",T.jsx("br",{}),"Happy Searching!"]}),T.jsxs("div",{children:[l&&T.jsx(h1,{selectedMovie:l,onMovieSelect:s}),T.jsx(k1,{children:o!=null&&o.length?o.map((c,h)=>T.jsx(Q0,{movie:c,onMovieSelect:s},h)):T.jsx(x1,{src:"Movix.png"})})]})]})}vl.createRoot(document.getElementById("root")).render(T.jsx(Ln.StrictMode,{children:T.jsx(E1,{})}));
